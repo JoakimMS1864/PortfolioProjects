@@ -112,5 +112,3 @@ join dbo.covid_vacinations as Vac
 	and Deaths.date = vac.date
 where Deaths.continent is not null
 --order by 2,3
-
---Du er på tid 03:33:00 i Alex the Analyst

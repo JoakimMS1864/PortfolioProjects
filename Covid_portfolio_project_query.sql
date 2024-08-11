@@ -75,7 +75,6 @@ join dbo.covid_vacinations as Vac
 	on Deaths.location = Vac.location
 	and Deaths.date = vac.date
 where Deaths.continent is not null
---order by 2,3
 )
 select * , (total_vaccinations/population)*100
 from Pop_VS_Vac
@@ -100,7 +99,6 @@ join dbo.covid_vacinations as Vac
 	on Deaths.location = Vac.location
 	and Deaths.date = vac.date
 where Deaths.continent is not null
---order by 2,3
 
 -- Creating a view to store data for later visualization
 create view PercentPopulationVaccinated as
@@ -111,4 +109,3 @@ join dbo.covid_vacinations as Vac
 	on Deaths.location = Vac.location
 	and Deaths.date = vac.date
 where Deaths.continent is not null
---order by 2,3
